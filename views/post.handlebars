@@ -1,0 +1,23 @@
+<h1>{{post.title}}</h1>
+<p>{{post.content}}</p>
+<p>Posted by: {{post.user.username}}</p>
+
+<h2>Comments</h2>
+{{#each post.comments}}
+  <div>
+    <p>{{this.comment_text}}</p>
+    <p>Commented by: {{this.user.username}}</p>
+  </div>
+{{/each}}
+
+{{#if logged_in}}
+  <form id="comment-form">
+    <div>
+      <label for="comment-text">Add a comment:</label>
+      <textarea id="comment-text" name="comment_text" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+{{else}}
+  <p><a href="/login">Log in</a> to leave a comment.</p>
+{{/if}}
