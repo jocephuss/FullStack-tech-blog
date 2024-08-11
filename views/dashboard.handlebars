@@ -1,23 +1,25 @@
-<h2>Your Dashboard</h2>
+<div id="dash">
+  <h2>My Dash</h2>
 
-{{#each posts}}
-  <div>
-    <h3>{{this.title}}</h3>
-    <p>{{this.content}}</p>
-    <button data-id="{{this.id}}" class="edit-post">Edit</button>
-    <button data-id="{{this.id}}" class="delete-post">Delete</button>
+  {{#each posts}}
+    <div id="my-posts">
+      <h3>{{this.title}}</h3>
+      <p>{{this.content}}</p>
+      <button data-id="{{this.id}}" class="edit-post">Edit</button>
+      <button data-id="{{this.id}}" class="delete-post">Delete</button>
+    </div>
+  {{else}}
+    <p>You haven't created any posts yet.</p>
+  {{/each}}
+
+  <button id="new-post">Create New Post</button>
+
+  <!-- Form to create or edit a post -->
+  <div id="post-form" style="display:flex;">
+    <input type="text" id="post-title" placeholder="Post Title" />
+    <textarea id="post-content" placeholder="Post Content"></textarea>
+    <button id="save-post">Save Post</button>
   </div>
-{{else}}
-  <p>You haven't created any posts yet.</p>
-{{/each}}
-
-<button id="new-post">Create New Post</button>
-
-<!-- Form to create or edit a post -->
-<div id="post-form" style="display:none;">
-  <input type="text" id="post-title" placeholder="Post Title" />
-  <textarea id="post-content" placeholder="Post Content"></textarea>
-  <button id="save-post">Save Post</button>
 </div>
 
 <script src="/js/dashboard.js"></script>

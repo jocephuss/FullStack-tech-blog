@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: rgb(162, 162, 162);
+}
+
+header {
+  background-color: #00343b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+a {
+  color: antiquewhite;
+  font-size: 25px;
+  margin: auto;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  scale: 1.1;
+}
+
+#post-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+#post-title {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid antiquewhite;
+  width: 75%;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+
+#post-content {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid antiquewhite;
+  width: 75%;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+
+#my-posts {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid antiquewhite;
+  padding: 10px;
+}
+
+#dash {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00343b;
+  margin-top: 10px;
+  color: antiquewhite;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #00343b;
+  color: antiquewhite;
+  flex-direction: column;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid antiquewhite;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #00343b;
+  color: antiquewhite;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+#comment-text {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid antiquewhite;
+  width: 75%;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+
+div {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid antiquewhite;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #00343b;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+  scale: 1.1;
+}

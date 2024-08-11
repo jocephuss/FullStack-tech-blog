@@ -1,23 +1,25 @@
-<h2>{{title}}</h2>
-<p>{{content}}</p>
-<p>Written by: {{user.username}} on {{createdAt}}</p>
+<div id="posts">
+  <h2>{{title}}</h2>
+  <p>{{content}}</p>
+  <p>Written by: {{user.username}} on {{createdAt}}</p>
 
-<h3>Comments</h3>
+  <h3>Comments</h3>
 
-{{#each comments}}
-  <div>
-    <p>{{this.comment_text}}</p>
-    <p>Commented by: {{this.user.username}} on {{this.createdAt}}</p>
-  </div>
-{{else}}
-  <p>No comments yet.</p>
-{{/each}}
+  {{#each comments}}
+    <div>
+      <p>{{this.comment_text}}</p>
+      <p>Commented by: {{this.user.username}} on {{this.createdAt}}</p>
+    </div>
+  {{else}}
+    <p>No comments yet.</p>
+  {{/each}}
 
-{{#if logged_in}}
-  <textarea id="comment-text" placeholder="Add a comment"></textarea>
-  <button id="submit-comment">Submit</button>
-{{else}}
-  <p><a href="/login">Log in</a> to add a comment.</p>
-{{/if}}
+  {{#if logged_in}}
+    <textarea id="comment-text" placeholder="Add a comment"></textarea>
+    <button id="submit-comment">Submit</button>
+  {{else}}
+    <p><a href="/login">Log in</a> to add a comment.</p>
+  {{/if}}
+</div>
 
 <script src="/js/comment.js"></script>
