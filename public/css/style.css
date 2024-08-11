@@ -145,3 +145,44 @@ button:hover {
   color: white;
   scale: 1.1;
 }
+
+#signup {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid antiquewhite;
+  width: 25%;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: #00343b;
+  color: antiquewhite;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid antiquewhite;
+  width: 25%;
+  background-color: #00343b;
+  color: antiquewhite;
+}

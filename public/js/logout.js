@@ -5,10 +5,14 @@ const logout = async () => {
   });
 
   if (response.ok) {
-    document.location.replace("/login");
+    // Successful logout
+    document.location.replace("/");
   } else {
     alert("Failed to log out");
   }
 };
 
-document.querySelector("#logout")?.addEventListener("click", logout);
+document.querySelector("#logout")?.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevents the default navigation
+  logout();
+});
