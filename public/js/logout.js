@@ -14,5 +14,7 @@ const logout = async () => {
 
 document.querySelector("#logout")?.addEventListener("click", (event) => {
   event.preventDefault(); // Prevents the default navigation
+
   logout();
 });
+console.log("Logout clicked");
