@@ -40,5 +40,5 @@ N/A
 N/A
 
 ## Questions
-For questions about the project, please contact [Jocephus](https://github.com/Jocephus).
+For questions about the project, please contact [Jocephuss](https://github.com/Jocephuss).
 You can also reach out directly at rowlandjosiah14@gmail.com.
