@@ -20,7 +20,7 @@ N/A
 ## Link 
 https://fullstack-tech-blog.onrender.com
 
-##Screenshot
+## Screenshot
 
 ![Screenshot 2024-08-15 180126](https://github.com/user-attachments/assets/f3172f87-347a-4c6e-b654-e56402e38f58)
 
